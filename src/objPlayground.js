@@ -41,7 +41,7 @@ const calculator = (number1, number2) => {
     div: Math.trunc(number1 / number2),
     sub: number1 - number2,
     };
-    return obj
+    return obj;
   }
 };
 

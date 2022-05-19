@@ -18,12 +18,14 @@
 
 const vqv = (nome, idade) => {
   let frase;
-  if (!nome || !idade) {
+  if (!nome || !idade  ) {
     frase = undefined;
   }
-  if (typeof nome === 'string' && typeof idade === 'number') {
-  frase = 'Oi, meu nome é '+ nome + '!\n' + 
-  'Tenho '+ idade + ' anos,\ntrabalho na Trybe e mando muito em programação!\n#VQV!';
+  if (typeof nome === 'string'  && typeof idade === 'number') {
+  frase = `Oi, meu nome é ${nome}!
+Tenho ${idade} anos,
+trabalho na Trybe e mando muito em programação!
+#VQV!`;
   } 
   return frase;
 };
