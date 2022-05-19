@@ -18,7 +18,7 @@
 const createStudent = (nome) => {
   if (typeof nome === 'string') {
     let obj = {name: nome, feedback: () => 'Eita pessoa boa!'};
-    return obj
+    return obj;
   }
 };
 
