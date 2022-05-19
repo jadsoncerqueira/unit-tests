@@ -34,23 +34,24 @@
 */
 
 const calculator = (number1, number2) => {
-  if (typeof number1 === 'number' && typeof number1 === 'number') {
-    return obj = {
+  if (typeof number1 === 'number' && typeof number2 === 'number') {
+    let obj = {
     sum: Math.round(number1 + number2),
     mult: Math.round(number1 * number2),
     div: Math.trunc(number1 / number2),
     sub: number1 - number2,
     };
-  };
+    return obj
+  }
 };
 
 const arrayGenerator = (type, object) => {
   let obj;
   if (type === 'keys') {
     obj = Object.keys(object);
-  } else if ( type === 'values') {
+  } else if (type === 'values') {
     obj = Object.values(object);
-  } else if ( type === 'entries') {
+  } else if (type === 'entries') {
     obj = Object.entries(object);
   }
   return obj;

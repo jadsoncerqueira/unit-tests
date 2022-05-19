@@ -12,12 +12,13 @@
 */
 
 const average = (lista) => {
-  let total = lista.reduce((contador, item) => contador + item , 0);
-  let check = (list) => list.every(element => typeof element === 'number');
+  let total = lista.reduce((contador, item) => contador + item ,0);
+  let check = (list) => (list.every(element => typeof element === 'number'));
   if (!lista.length) {
     return undefined;
-  } else if (check(lista)) {
-    return Math.round(total / lista.length);
+  }
+  if (check(lista)) {
+    return Math.round(total / lista.length)
   };
 };
 
